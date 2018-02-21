@@ -1,0 +1,30 @@
+<html>
+<h1>UJET TEST</h1>
+<script src="https://websdk.ujet.co/v1/loader/loader.js"></script>
+
+<script>UJET.initialize({
+	companyId: '15130410051234536fbe5f6875e94349b',
+	handlers: {
+		authentication: function(callback) {
+			getMyAuthToken(function(token) {
+				callback({ token:token });
+			});
+		}
+	}
+});
+</script>
+
+<script>
+function getMyAuthToken(callback) {
+	fetch('https://ujettest.herokuapp.com/api/ujet/sign')
+		.then(function(resp) {
+			return resp.json();
+		})
+		.then(function(json) {
+			callback(json.token);
+		});
+}
+	
+</script>
+
+</html>
