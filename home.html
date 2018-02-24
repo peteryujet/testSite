@@ -2,8 +2,8 @@
 Snap-In Chat Test
 </head>
 <style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton { background-color: #63ADE7; font-family: "Salesforce Sans", sans-serif; }
-	.embeddedServiceHelpButton .helpButton .uiButton:focus { outline: 1px solid #63ADE7; }
+	.embeddedServiceHelpButton .helpButton .uiButton { background-color: #E41818; font-family: "Salesforce Sans", sans-serif; }
+	.embeddedServiceHelpButton .helpButton .uiButton:focus { outline: 1px solid #E41818; }
 	@font-face {
 	font-family: 'Salesforce Sans';
 	src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
@@ -60,12 +60,12 @@ Snap-In Chat Test
 <script type='text/javascript'>
 var initESW = function(gslbBaseURL) {
 embedded_svc.settings.displayHelpButton = true; //Or false
-embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+embedded_svc.settings.language = 'en-US'; //For example, enter 'en' or 'en-US'
 
 embedded_svc.settings.defaultMinimizedText = 'Have a question?'; //(Defaults to Chat with an Expert)
 //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
-embedded_svc.settings.loadingText = 'Finding your specialist!'; //(Defaults to Loading)
+embedded_svc.settings.loadingText = 'One moment...'; //(Defaults to Loading)
 //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
 // Settings for Live Agent
