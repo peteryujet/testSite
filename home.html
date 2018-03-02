@@ -9,6 +9,41 @@ Snap-In Chat Test
 	src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
 	url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
 	}
+.waitingGreeting{ 
+visibility: hidden; 
+} 
+.waitingGreeting:before{ 
+visibility: visible; 
+content: "Your Agent is on its way.. be patient"; 
+} 
+.waitingMessage{ 
+visibility: hidden; 
+} 
+.waitingMessage:before{ 
+visibility: visible; 
+content: "Chat will be in Progress soon"; 
+} 
+.message{ 
+visibility: hidden; 
+} 
+.message:before{ 
+visibility: visible; 
+content: "This is done from our end ..... Chat Test ... Test .."; 
+} 
+#dialogTextTitle{ 
+visibility: hidden; 
+} 
+#dialogTextTitle:before{ 
+visibility: visible; 
+content: "Are you confident ????????"; 
+} 
+#dialogTextBody{ 
+visibility: hidden; 
+} 
+#dialogTextBody:before{ 
+visibility: visible; 
+content: "Please be sure that you want to end the chat so that it can be disconnected"; 
+}
 </style>
 
 <!-- Start of Invitations -->
